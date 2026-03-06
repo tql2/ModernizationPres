@@ -1,36 +1,16 @@
-// New slide object
-const newSlide = {
-  id: 15,
-  type: "images",
-  title: "Fire Fighter Fatality Map Visualization",
-  images: [
-    "/firefighter-fatality-california.png",
-    "/firefighter-fatality-us-filtered.png"
-  ]
-};
+import React from 'react';
+import ImagesSlide from './ImagesSlide';
 
-// ImagesSlide component function
-const ImagesSlide = ({ images }) => {
-  return (
-    <div className="image-grid">
-      {images.map((image, index) => (
-        <div key={index} className="image-item">
-          <img src={image} alt={`Slide ${index + 1}`} />
+// Existing code...
+
+function App() {
+    return (
+        <div className="App">
+            <h1>Welcome to the Modernization Project</h1>
+            <ImagesSlide />
+            {/* Other components and code */}
         </div>
-      ))}
-    </div>
-  );
-};
+    );
+}
 
-// Update renderSlide function to include "images" type
-const renderSlide = (slide) => {
-  switch (slide.type) {
-    // other cases
-    case "images":
-      return <ImagesSlide images={slide.images} />;
-    // other cases
-  }
-};
-
-// Add the new slide to the slides array (assuming it exists)
-slides.push(newSlide);
+export default App;
