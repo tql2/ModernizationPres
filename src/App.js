@@ -249,7 +249,7 @@ const slides = [
   {
     id: 15,
     type: "images",
-    title: "1st App Modernication: Fire Fighter Fatality Map",
+    title: "1st App Modernization: Fire Fighter Fatality Map",
     images: [
       {
         src: "/firefighter-fatality-california.png",
