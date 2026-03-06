@@ -249,7 +249,7 @@ const slides = [
   {
     id: 15,
     type: "images",
-    title: "1st App Modernization: Fire Fighter Fatality Map",
+    title: "1st App Modernization: WISARDS Application",
     images: [
       {
         src: "/firefighter-fatality-california.png",
@@ -258,6 +258,43 @@ const slides = [
       {
         src: "/firefighter-fatality-us-filtered.png",
         alt: "US Fire Fighter Fatality Map - Filtered state view with data table",
+      },
+    ],
+  },
+  {
+    id: 16,
+    type: "metrics",
+    title: "WISARDS Modernization Advantages",
+    metrics: [
+      {
+        icon: "⏱️",
+        label: "Turnaround Time",
+        desc: "Reduced Turnaround time for enhancements from weeks to days",
+      },
+      {
+        icon: "🧩",
+        label: "Reduced complexity",
+        desc: "Solution is easier to manage, update, and scale.",
+      },
+      {
+        icon: "🏢",
+        label: "No separate hosting",
+        desc: "Everything runs within existing CDC cloud services..",
+      },
+      {
+        icon: "✨",
+        label: "Less Overhead",
+        desc: "Less application management overhead: No code scanning, .",
+      },
+      {
+        icon: "🤝",
+        label: "Improved Support to the Science Teams",
+        desc: "Science teams can focus on analysis instead of technology.",
+      },
+      {
+        icon: "💰",
+        label: "Cost Avoidance",
+        desc: "Documented savings from eliminating hosting costs.",
       },
     ],
   },
@@ -678,21 +715,94 @@ function ImagesSlide({ s }) {
   return (
     <SW>
       <ST>{s.title}</ST>
+
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: 20,
           marginTop: 16,
+          // Optional: ensure the grid has height to push to bottom.
+          // If SW already gives full height, you can remove this.
+          // height: "100%",
+          // minHeight: "60vh",
+          alignItems: "stretch",
         }}
       >
         {s.images.map((img, i) => (
-          <div key={i} style={{ textAlign: "center" }}>
+          <div
+            key={i}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              // Make each column fill the grid cell so the "auto" margin can push to bottom
+              height: "100%",
+            }}
+          >
             <img
               src={img.src}
               alt={img.alt}
-              style={{ maxWidth: "100%", height: "auto", borderRadius: 8 }}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                borderRadius: 8,
+                marginBottom: 16,
+              }}
             />
+
+            {/* Info box */}
+            <div
+              style={{
+                background: "#f5f7fa",
+                borderRadius: 8,
+                padding: "14px 16px",
+                border: `2px solid ${i === 0 ? "#c62828" : "#2e7d32"}`,
+                // Push this box to the bottom of the column
+                marginTop: "auto",
+              }}
+            >
+              {i === 0 ? (
+                <>
+                  <div
+                    style={{
+                      fontWeight: 700,
+                      fontSize: 13,
+                      color: "#c62828",
+                      marginBottom: 8,
+                    }}
+                  >
+                    Current App Technology
+                  </div>
+                  <div style={{ fontSize: 12, color: "#333", lineHeight: 1.5 }}>
+                    <p style={{ margin: "6px 0", fontSize: 11 }}>
+                      Custom-built aspx app developed by a contractor using
+                      either .NET or c# framwork. This requires an ESC record
+                      and full application governance.
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div
+                    style={{
+                      fontWeight: 700,
+                      fontSize: 13,
+                      color: "#2e7d32",
+                      marginBottom: 8,
+                    }}
+                  >
+                    New Technology
+                  </div>
+                  <div style={{ fontSize: 12, color: "#333", lineHeight: 1.5 }}>
+                    <p style={{ margin: "6px 0", fontSize: 11 }}>
+                      Leveraged existing Microsoft Power BI platform to connect
+                      to existing WISARDS database and create the same reporting
+                      dashboard functionality.
+                    </p>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         ))}
       </div>
