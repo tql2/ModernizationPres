@@ -246,45 +246,6 @@ const slides = [
       },
     ],
   },
-  {
-    id: 15,
-    type: "nextsteps",
-    title: "Immediate Next Steps",
-    steps: [
-      {
-        num: "1",
-        action:
-          "Schedule project kick-off meeting with Data & Analytics team leadership.",
-      },
-      {
-        num: "2",
-        action:
-          "Request full MPN application inventory from IT/program management.",
-      },
-      {
-        num: "3",
-        action: "Obtain access to the CDC Enterprise System Catalog (ESC).",
-      },
-      {
-        num: "4",
-        action:
-          "Identify and confirm DLO contacts/liaisons for each business area.",
-      },
-      {
-        num: "5",
-        action:
-          "Set up project tracking tools (Jira, Confluence, or SharePoint).",
-      },
-      { num: "6", action: "Draft and send DLO meeting invites for Weeks 3–5." },
-      {
-        num: "7",
-        action:
-          "Brief leadership on project plan and secure mandate for DLO participation.",
-      },
-    ],
-    closing:
-      "The Data & Analytics team is positioned to execute this initiative rapidly by leveraging CDC enterprise tools, structured stakeholder engagement, and agile delivery practices.",
-  },
 ];
 
 const SW = ({ children, bg = "white" }) => (
