@@ -23,7 +23,7 @@ const slides = [
       {
         icon: "⚡",
         label: "Speed",
-        text: "Begin with initial app reviews to move fast; avoid over-engineering discovery.",
+        text: "Begin with initial app reviews and move fast; avoid over-engineering discovery.",
       },
       {
         icon: "🤝",
@@ -69,10 +69,9 @@ const slides = [
     actions: [
       "Review available information from our existing application asset inventory: app name, purpose, owner, technology stack.",
       "Cross-reference each app against the CDC Enterprise System Catalog (ESC) and begin mapping each candidate to a potential enterprise tool replacement.",
-      "Flag apps with obvious enterprise equivalents (e.g., SharePoint, PowerBI, Salesforce, Teams) and document the initial mapping rationale.",
+      "Flag apps with obvious enterprise equivalents (e.g., SharePoint, PowerBI, Salesforce, Teams).",
       "Review each app's complexity, user impact, data sensitivity, and feasibility of replacement with an enterprise tool.",
       "Produce an initial shortlist of candidates for DLO validation.",
-      "Document assumptions made during initial review.",
     ],
     output: "📄 Output: Draft Candidate App Replacement Matrix",
   },
@@ -201,11 +200,6 @@ const slides = [
         app: "CMP",
         DLO: "RHD",
         toolset: "Power BI",
-      },
-      {
-        app: "Forms",
-        DLO: "HELD",
-        toolset: "SharePoint Document Library",
       },
     ],
   },
