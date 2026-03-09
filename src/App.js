@@ -122,7 +122,6 @@ const slides = [
           "Who are the main users — internal staff, external partners, or the public?",
           "What problem would go unsolved if this app disappeared tomorrow?",
           "What business logic, calculations, or rules are built into the app (e.g., workflows, validations, automated decisions)?",
-          "Are there any manual workarounds or processes that exist alongside the app?",
         ],
       },
       {
@@ -278,7 +277,7 @@ const slides = [
       {
         icon: "✨",
         label: "Less Overhead",
-        desc: "Less application management overhead: No code scanning, .",
+        desc: "Less application management overhead: No code scanning, no separate ATO, etc.",
       },
       {
         icon: "🤝",
@@ -770,7 +769,7 @@ function ImagesSlide({ s }) {
                   <div style={{ fontSize: 12, color: "#333", lineHeight: 1.5 }}>
                     <p style={{ margin: "6px 0", fontSize: 11 }}>
                       Custom-built aspx app developed by a contractor using
-                      either .NET or c# framwork. This requires an ESC record
+                      either .NET or C# framwork. This requires an ESC record
                       and full application governance.
                     </p>
                   </div>
