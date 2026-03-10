@@ -50,7 +50,7 @@ const slides = [
       {
         num: "02",
         title: "DLO as Partners",
-        desc: "Science teams own their requirements. We facilitate and advise.",
+        desc: "Science teams own their requirements and priorities. We facilitate and advise.",
       },
       {
         num: "03",
