@@ -67,7 +67,7 @@ const slides = [
     title: "MPN App Discovery & Candidate Identification",
     desc: "Review the full list of MPN applications and identify the best replacement candidates using available information.",
     actions: [
-      "Review available information from our existing application asset inventory: app name, purpose, owner, technology stack.",
+      "Review available information from our existing application asset inventory: app overview, purpose, owner, technology stack.",
       "Cross-reference each app against the CDC Enterprise System Catalog (ESC) and begin mapping each candidate to a potential enterprise tool replacement.",
       "Flag apps with obvious enterprise equivalents (e.g., SharePoint, PowerBI, Salesforce, Teams).",
       "Review each app's complexity, user impact, data sensitivity, and feasibility of replacement with an enterprise tool.",
