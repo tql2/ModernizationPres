@@ -86,7 +86,7 @@ const slides = [
       "Schedule individual DLO meetings (30–60 min per).",
       "Present the candidate list with our rationale — invite feedback and additions.",
       "Ask DLOs to rank replacement priority from their perspective.",
-      "Compare DLO priorities against our technical/risk-based ranking.",
+      "Compare DLO priorities against our technical/risk-based assessment.",
       "Identify any apps we missed that DLOs believe should be included.",
       "Document pain points, workarounds, and critical use cases per app.",
       "Reach consensus on the final 6 apps to be replaced.",
@@ -130,7 +130,7 @@ const slides = [
           "What is the impact of downtime or a gap in this service?",
           "Is this app tied to any regulatory reporting or compliance requirements?",
           "Are there upcoming deadlines or events that depend on this app?",
-          "How urgent is replacement?",
+          "How urgent is a replacement?",
         ],
       },
       {
@@ -242,7 +242,7 @@ const slides = [
   {
     id: 15,
     type: "images",
-    title: "1st App Modernization: WISARDS Application",
+    title: "1st App Modernization: WISARDS Fire Fighter Fatality Map",
     images: [
       {
         src: "/firefighter-fatality-california.png",
