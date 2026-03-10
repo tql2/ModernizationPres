@@ -790,7 +790,7 @@ function ImagesSlide({ s }) {
                     <p style={{ margin: "6px 0", fontSize: 11 }}>
                       Leveraged existing Microsoft Power BI platform to connect
                       to existing WISARDS database and create the same reporting
-                      dashboard functionality.
+                      dashboard functionality in a matter of days.
                     </p>
                   </div>
                 </>
